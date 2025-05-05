@@ -1,153 +1,170 @@
+/* Reset default margins, paddings, and box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set the default font for the entire page */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
 /* Style for the CTA banner */
 .cta-banner {
-  background: linear-gradient(rgba(249, 214, 177, 0.9), rgba(249, 214, 177, 0.9)), url('img/cta-bg.jpg') center/cover no-repeat; /* Darken the overlay */
-  text-align: center;
-  padding: 50px 20px;
-  font-family: Arial, sans-serif;
-  color: #77492a; /* Change text color to white for better visibility */
-  margin-bottom: 40px;
+  background: linear-gradient(rgba(249, 214, 177, 0.9), rgba(249, 214, 177, 0.9)), url('img/cta-bg.jpg') center/cover no-repeat; /* Add background image with overlay */
+  text-align: center; /* Center-align text */
+  padding: 50px 20px; /* Add padding around the banner */
+  color: #77492a; /* Set text color */
+  margin-bottom: 40px; /* Add space below the banner */
 }
 
-/* Ensure text appears above the overlay */
+/* Ensure text and button appear above the overlay */
 .cta-banner h1, .cta-banner p, .cta-button {
-  position: relative;
-  z-index: 2;
+  position: relative; /* Position relative to the banner */
+  z-index: 2; /* Ensure they appear above the background */
 }
 
-/* Style for the main heading */
+/* Add subtle text shadow for better readability */
+.cta-banner h1, .cta-banner p {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+/* Style for the main heading in the banner */
 .cta-banner h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 2.5em; /* Large font size for emphasis */
+  margin-bottom: 20px; /* Add space below the heading */
 }
 
-/* Style for the description */
+/* Style for the description in the banner */
 .cta-banner p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
+  font-size: 1.2em; /* Slightly larger font for readability */
+  margin-bottom: 30px; /* Add space below the description */
 }
 
 /* Style for the call-to-action button */
 .cta-button {
-  display: inline-block;
-  background-color: #dd945e; /* Use #dd945e */
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1em;
+  display: inline-block; /* Make the link look like a button */
+  background-color: #dd945e; /* Set button background color */
+  color: white; /* Set button text color */
+  padding: 15px 30px; /* Add padding for a button-like appearance */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 1em; /* Set font size */
 }
 
 /* Add hover effect for the button */
 .cta-button:hover {
-  background-color: #c5753f; /* Use #c5753f for hover */
+  background-color: #c5753f; /* Change background color on hover */
 }
 
-/* Updated style for the site header */
+/* Style for the site header */
 .site-header {
-  background-color: #dd945e; /* Use #dd945e */
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-  font-family: Arial, sans-serif;
+  background-color: #dd945e; /* Set header background color */
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Add vertical padding */
+  color: white; /* Set text color */
 }
 
-/* Updated style for the site name */
+/* Style for the site name in the header */
 .site-header h1 {
-  font-size: 1.3em;
-  margin: 0;
+  font-size: 1.3em; /* Set font size */
+  margin: 0; /* Remove default margin */
 }
 
-/* Updated style for the info section */
+/* Style for the info section */
 .info-section {
-  text-align: center;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
-  width: 80%;
+  text-align: center; /* Center-align content */
+  margin: 40px auto; /* Add space above and below, center the section */
+  width: 80%; /* Limit the width of the section */
 }
 
-/* Style for the image */
+/* Style for the image in the info section */
 .info-section img {
-  display: inline-block;
-  width: 45%;
-  vertical-align: top;
-  margin-right: 5%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block; /* Align image inline with text */
+  width: 45%; /* Set image width */
+  vertical-align: top; /* Align image to the top */
+  margin-right: 5%; /* Add space between the image and text */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
 }
 
-/* Style for the text */
+/* Style for the text in the info section */
 .info-section .info-text {
-  display: inline-block;
-  width: 45%;
-  text-align: left;
+  display: inline-block; /* Align text inline with the image */
+  width: 45%; /* Set text width */
+  text-align: left; /* Align text to the left */
 }
 
+/* Style for the heading in the info section */
 .info-section h2 {
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  color: #c5753f; /* Use #c5753f */
+  font-size: 1.8em; /* Set font size */
+  margin-bottom: 15px; /* Add space below the heading */
+  color: #c5753f; /* Set text color */
 }
 
+/* Style for the paragraph in the info section */
 .info-section p {
-  font-size: 1.2em;
-  line-height: 1.5;
+  font-size: 1.2em; /* Set font size */
+  line-height: 1.5; /* Add spacing between lines */
 }
 
 /* Style for the Pets in Need section */
 .pets-in-need {
-  text-align: center;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
-  width: 80%;
+  text-align: center; /* Center-align content */
+  margin: 40px auto; /* Add space above and below, center the section */
+  width: 80%; /* Limit the width of the section */
 }
 
+/* Style for the heading in the Pets in Need section */
 .pets-in-need h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: #c5753f; /* Use #dd945e */
+  font-size: 1.8em; /* Set font size */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #c5753f; /* Set text color */
 }
 
+/* Style for each pet container */
 .pet {
-  display: inline-block;
-  width: 25%;
-  margin: 10px;
-  text-align: center;
+  display: inline-block; /* Arrange pets in a row */
+  width: 25%; /* Set width for each pet */
+  margin: 10px; /* Add space between pets */
+  text-align: center; /* Center-align each pet's content */
 }
 
+/* Style for the pet images */
 .pet img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
+  width: 100%; /* Make the image fill the container */
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image scales properly */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  margin-bottom: 10px; /* Add space below the image */
 }
 
+/* Add hover effect for pet images */
+.pet img:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Style for the pet descriptions */
 .pet p {
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 1em; /* Set font size */
+  line-height: 1.4; /* Add spacing between lines */
 }
 
 /* Style for the site footer */
 .site-footer {
-  background-color: #f2c266; /* Use #f2c266 */
-  text-align: center;
-  padding: 10px 0;
-  font-family: Arial, sans-serif;
-  font-size: 0.9em;
+  background-color: #f2c266; /* Set footer background color */
+  text-align: center; /* Center-align text */
+  padding: 10px 0; /* Add vertical padding */
+  font-size: 0.9em; /* Set font size */
 }
 
-/* Responsive styles */
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  /* Adjust CTA banner padding for smaller screens */
   .cta-banner {
-    padding: 30px 15px;
+    padding: 30px 15px; /* Reduce padding for smaller screens */
   }
 
   .cta-banner h1 {
@@ -163,19 +180,13 @@
     font-size: 0.9em; /* Reduce button text size */
   }
 
-  /* Stack image and text in the info section */
   .info-section img, .info-section .info-text {
-    display: block;
+    display: block; /* Stack image and text */
     width: 100%; /* Full width for both elements */
     margin: 20px 0; /* Add spacing between elements */
     text-align: center; /* Center-align text */
   }
 
-  .info-section .info-text {
-    text-align: center; /* Center-align text for smaller screens */
-  }
-
-  /* Adjust Pets in Need section */
   .pet {
     width: 100%; /* Full width for each pet */
     margin: 20px 0; /* Add spacing between pets */
@@ -183,17 +194,16 @@
 }
 
 @media (max-width: 480px) {
-  /* Further reduce font sizes for very small screens */
   .cta-banner h1 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Further reduce heading size */
   }
 
   .cta-banner p {
-    font-size: 0.9em;
+    font-size: 0.9em; /* Further reduce paragraph size */
   }
 
   .cta-button {
-    font-size: 0.8em;
+    font-size: 0.8em; /* Further reduce button text size */
   }
 
   .info-section h2, .pets-in-need h2 {
